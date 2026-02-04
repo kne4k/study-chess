@@ -1,0 +1,40 @@
+services:
+
+  # Serviço banco de dados
+  db:
+    image: postgres:15-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=chess_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  # Serviço backend
+  backend:
+    build: ./backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  # Serviço frontend
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend:/app
+
+      # Utilizar a pasta node_modules
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+
+    # Ajuda o Windows a perceber as alterações
+    environment:
+      - CHOKIDDAR_USEPOLLING=true
+
+volumes:
+  postgres_data:
