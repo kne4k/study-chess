@@ -11,4 +11,7 @@ export interface GameData {
     variant_name: string;
     pgn: string;
     explanations: MoveExplanation[];
+    white_player: string;
+    black_player: string;
+    event: string;
 }
