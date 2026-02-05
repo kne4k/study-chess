@@ -1,0 +1,86 @@
+{% extends 'admin/base_site.html' %}
+{% load static %}
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'chess/css/admin_import.css' %}">
+<style>
+    .submit-row {
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+
+    .cancel-link {
+        margin-left: 10px;
+        padding: 10px 15px;
+        background-color: #6c757d;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    .cancel-link:hover {
+        background-color: #5a6268;
+        color: white;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<div id="content-main">
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <fieldset class="module aligned">
+            <h2>Selecione o arquivo</h2>
+
+            <div class="form-row">
+                {{ form.file.label_tag }}
+                <div>
+                    {{ form.file }}
+
+                    {% if form.file.help_text %}
+                    <p class="help">{{ form.file.help_text|safe }}</p>
+                    {% endif %}
+
+                    {% if form.file.errors %}
+                    <p class="errornote">{{ form.file.errors }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="submit-row">
+            <input type="submit" value="Importar" class="default" />
+            <a href="{% url 'admin:chess_game_changelist' %}" class="cancel-link">
+                Cancelar
+            </a>
+        </div>
+    </form>
+
+    <hr style="margin: 30px 0;">
+
+    <div class="help" style="background-color: #1f1f1f; padding: 20px; border-radius: 5px;">
+        <h2 style="margin-top: 0;">📋 Instruções de Formato</h2>
+        <p><strong>O arquivo deve seguir o formato abaixo:</strong></p>
+        <pre
+            style="background-color: #121212; padding: 15px; border: 1px solid #ddd; border-radius: 4px; overflow-x: auto;">===JOGO===
+
+VARIANT: Nome da Variante WHITE: Jogador das Brancas BLACK: Jogador das Pretas EVENT: Nome do Evento PGN: 1. e4 e5 2. Nf3 Nc6...
+
+---EXPLICAÇÕES---
+
+PLY 0: Texto da explicação para posição inicial...
+
+PLY 1: Texto da explicação para primeiro meio-lance...
+
+===FIM===</pre>
+
+        <p><strong>Observações importantes:</strong></p>
+        <ul>
+            <li>Cada jogo deve começar com <code>===JOGO===</code> e terminar com <code>===FIM===</code></li>
+            <li>Todos os campos (VARIANT, WHITE, BLACK, EVENT, PGN) são obrigatórios</li>
+            <li>As explicações são opcionais, mas devem seguir o formato <code>PLY X:</code></li>
+            <li>O arquivo deve estar codificado em UTF-8</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

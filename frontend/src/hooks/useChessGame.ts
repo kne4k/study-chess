@@ -33,8 +33,6 @@ export function useChessGame() {
         // Marca este jogo como o selecionado
         setSelectedGame(gameData);
         // Cria um tabuleiro temporário/invisível
-        // POR QUE: Precisamos carregar o PGN para extrair os lances
-        // mas sem afetar o tabuleiro visual ainda
         const masterGame = new Chess();
 
         try {
@@ -46,7 +44,6 @@ export function useChessGame() {
             // Salva esse array no estado moveHistory
             setMoveHistory(masterGame.history());
             // Reseta o tabuleiro visual para a posição inicial
-            // POR QUE: Queremos que o usuário veja a posição inicial primeiro
             setGame(new Chess());
 
             // Volta para o índice 0 (posição inicial)
@@ -106,8 +103,6 @@ export function useChessGame() {
             // Cria um tabuleiro completamente novo (posição inicial)
             const newGame = new Chess();
             // Aplica todos os lances do início até o novo índice
-            // Loop: i vai de 0 até nextPly-1
-            // Exemplo: se nextPly = 3, aplica lances 0, 1, 2
             for (let i = 0; i < nextPly; i++) {
                 newGame.move(moveHistory[i]);
             }
