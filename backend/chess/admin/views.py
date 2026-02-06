@@ -19,7 +19,6 @@ class ImportGamesMixin:
                     messages.error(
                         request,
                         'Erro: arquivo não está em UTF-8 e não pode ser lido',
-                        level='error'
                     )
                     return redirect('..')
                 
@@ -31,13 +30,11 @@ class ImportGamesMixin:
                     messages.success(
                         request,
                         f'{total_games} jogos e {total_explanations} explicações foram importados!',
-                        level='success'
                     )
                 except Exception as e:
                     messages.error(
                         request,
                         f'Erro ao processar o arquivo: {str(e)}',
-                        level='error'
                     )
                 
                 return redirect('..')
