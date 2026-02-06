@@ -1,0 +1,51 @@
+===JOGO===
+
+VARIANT: Ruy Lopez (Variante Chigorin com 5.d3) 
+WHITE: N. McDonald 
+BLACK: B. Savage 
+EVENT: British League (4NCL) 2011 
+PGN: 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d3 b5 6. Bb3 Be7 7. 0-0 d6 8. a4 b4 9. a5 0-0 10. Nbd2 Be6 11. Nc4 Rb8 12. Re1 Nd7 13. Be3 Bf6 14. Ba4 Ne7 15. c3 bxc3 16. bxc3 Bxc4 17. dxc4 Nc5 18. Bxc5 dxc5 19. Nd2 Qd3 20. Re3 Qd6 21. Nb3 Rfd8 22. Re1 Ng6 23. Qg4 Be7 24. Red1 Qf6 25. g3 Nf8 26. Kg2 g6 27. Qf3 Qxf3+ 28. Kxf3 Rxd1 29. Rxd1 Bd6 30. Ke2 Ne6 31. Kd3 Kf8 32. Kc2 Ke7 33. Nd2 f5 34. exf5 gxf5 35. Nf1 f4 36. Nd2 Rf8 37. Ne4 Nd8 38. Rb1 Ke6 39. Rb8 Nf7 40. Rb7 Kf5 41. f3 fxg3 42. hxg3 Ng5 43. Bc6 Kg6 44. Nxg5 Kxg5 45. Ra7 e4 46. Bxe4 Bxg3 47. Rxa6 h5 48. Rg6+ Kf4 49. a6 c6 50. a7 Ra8 51. Rg7 h4 52. Bxc6 Rxa7 53. Rxa7 h3 54. Rf7+ Ke3 55. f4 1-0
+
+---EXPLICAÇÕES---
+
+PLY 16: 8... b4 Exercício: No jogo anterior, Topalov jogou 8 ... Rb8. Descreva alguns dos pontos positivos do lance de peão das Pretas. Resposta: Obviamente a ameaça de 9 axb5 foi atendida. O lance do jogo visa fazer isso mantendo a ala da dama semibloqueada. Assim, as Pretas não entregam a coluna "a", como é o caso após 8 ... Rb8 9 axb5 axb5. Além disso, o peão em b4 tira a casa c3 do cavalo branco. Após um subsequente ... Rb8, a construção natural das Brancas com c2-c3, visando d3-d4, pode ser respondida por ... b4xc3, quando após b2xc3 em resposta, a torre preta tem a coluna b aberta e a base para possíveis operações táticas contra o bispo em b3.
+
+PLY 17: 9. a5!? Exercício: Em vez de desenvolver suas peças, as Brancas movem seu peão "a" uma segunda vez. Você consegue ver as ideias por trás desse lance? Alguma desvantagem? Resposta: Existem várias ideias inter-relacionadas por trás do lance de peão:
+
+O peão em a6 é fixado como alvo.
+
+O peão de b4 não pode ser apoiado com ... a6-a5, deixando a ala da dama preta desconexa.
+
+As Pretas também são impedidas de expandir seu centro de peões com ... Na5 e ... c7-c5.
+
+O bispo das Brancas pode mais uma vez assediar o cavalo que defende e5, com Ba4. Uma possível desvantagem da ideia das Brancas é que, ao atrasar seu desenvolvimento, elas podem dar às Pretas a chance de arranjar o lance libertador ... d6-d5. Além disso, o peão em a5 parece à primeira vista mais vulnerável do que o peão que está bloqueando em a6. Mas como veremos, nem a torre preta em a8 nem o bispo em c8 querem brincar de babá do peão de a6 – eles têm outras tarefas a cumprir. À medida que o jogo se desenrola, o peão de a6 perde seus aliados. Se o peão de a6 for perdido, então o peão branco de a5 é transformado em um peão passado muito avançado.
+
+PLY 20: 10... Be6 Pergunta: Agora, o que acontece se as Pretas tentarem 10 ... Bg4, visando 11 ... Nd4 para colocar pressão em f3 e ameaçar ... Nxb3? A cravada não é irritante para as Brancas? Resposta: Após 10 ... Bg4, o primeiro lance a considerar é 11 c3. No entanto, o melhor plano para as Brancas seria usar seus peões da ala do rei para isolar o bispo das Pretas. Isso pode ser feito com 11 h3 Bh5 12 g4! Bg6 13 Nc4. Então os planos das Brancas incluem Ba4 para perturbar o cavalo em c6, e Ne3. O bispo preto em g6 torna-se um passivo posicional. Eu sei que empurrar peões na frente do seu próprio rei pode parecer desagradável, mas as Pretas não têm o dinamismo para quebrar a cadeia de peões brancos na ala do rei. Pelo contrário, é provável que isso as sufoque se tentarem atacá-la.
+
+PLY 21: 11. Nc4 O cavalo escolhe c4. Pergunta: Por que é uma boa ideia colocá-lo aqui em vez de realizar a manobra (após Nbd2) de Re1, Nf1 e Ng3 que vimos em Carlsen-Topalov? Resposta: Em c4, o cavalo restringe o lance libertador ... d6-d5, pelo menos por enquanto, pois e5 ficaria pendurado. Ele também adiciona uma guarda ao peão de a5, dissuadindo uma tentativa de atacá-lo com 11 ... Rb8 e 12 ... Rb5. Ele bloqueia a troca de bispos, permitindo que as Brancas mantenham mais tensão central. Além disso, se as Brancas quiserem usar seu cavalo na ala do rei, isso pode ser alcançado tão eficientemente com Nc4 e Ne3, visando f5, quanto com Nf1 e Ne3.
+
+PLY 23: 12. Re1 Um lance natural que dificulta ainda mais o avanço libertador ... d6-d5, pois após e4xd5 o peão de e5 seria atacado pela torre bem como pelos cavalos brancos. No entanto, as Pretas podem ser igualmente obstrutivas com o pequeno plano de ... Nd7, ... Bf6 e ... Nd4 que impede as Brancas de expandir com d3-d4. Portanto, 12 Be3!? imediatamente poderia ser mais preciso, visando 13 h3, 14 Qe2, 15 Rfd1 etc., aquecendo para d3-d4. O ponto é que as Pretas não podem dar o primeiro passo em seu plano 'anti d3-d4' com 12 ... Nd7? pois 13 Ba4! seria muito embaraçoso para o cavalo em c6.
+
+PLY 25: 13. Be3 Impedindo 13 ... Nc5. Exercício: Um jovem Magnus Carlsen jogou o ambicioso 13 ... d5 aqui e, após 14 exd5 Bxd5, venceu seguindo algumas aventuras em N.De Firmian-M.Carlsen, Copenhague 2004. Você consegue ver algo melhor para as Brancas? Resposta: As Brancas poderiam usar a casa a4 com 14 Ba4!. Por exemplo 14 ... dxc4 15 Bxc6 cxd3 16 Qxd3 e o peão de a6 está pendurado. As Pretas têm um jogo difícil.
+
+PLY 27: 14. Ba4?! As Brancas encorajam as Pretas a jogar um bom lance! (Felizmente, seu autor não tem pretensões de ser um dos melhores jogadores do mundo). Em vez disso, após 14 c3 – iniciando o processo de expansão no centro – as Pretas estavam sob pressão na ala da dama em N.De Firmian-A.Beliavsky, Copenhague 2004.
+
+PLY 28: 14... Ne7? Pergunta: Então, como as Pretas devem tirar vantagem da imprecisão das Brancas? Resposta: Não assim! As Pretas deveriam ter aproveitado a chance para simplificar com 14 ... Nd4!. Por exemplo 15 c3 bxc3 16 bxc3 Nxf3+ 17 Qxf3 Bg5! com boas chances de igualdade.
+
+PLY 32: 16... Bxc4 Savage procura escapar através de trocas, mas as Brancas emergem com vantagens posicionais pequenas, mas permanentes.
+
+PLY 37: 19. Nd2 Pergunta: Por que as Brancas estão melhores aqui? Resposta: O peão de a6 está vulnerável ao ataque do bispo de casas claras das Brancas. Se ele cair, então o peão passado de 'a' decidirá o jogo. Aliado a isso está a ameaça latente de Nb3 e Nxc5, quando o cavalo assedia o peão de a6. Enquanto isso, o bispo de casas escuras das Pretas não tem papel além de defender c5.
+
+PLY 53: 27. Qf3 As Brancas ficam felizes em trocar damas, pois isso lhes permite ativar seu rei.
+
+PLY 59: 30. Ke2 O rei segue para c2 para neutralizar qualquer possibilidade de a torre das Pretas explorar a coluna b. Isso libera seu cavalo para a ação no centro.
+
+PLY 65: 33. Nd2 Indo para d5 via f1 e e3. As Pretas têm que se preocupar com ideias como a troca de torres iniciada com Rb1 seguida por Bc6 e Bb7, ganhando o peão de a6. Ele tenta ganhar contrajogo na ala do rei, mas isso o leva a problemas.
+
+PLY 71: 36. Nd2 De volta, agora que uma maravilhosa casa de bloqueio apareceu para o cavalo na frente do peão de e5.
+
+PLY 75: 38. Rb1 Agora o peão de a6 cairá cedo ou tarde, sem que as Pretas ganhem contrajogo suficiente.
+
+PLY 86: 43... Kg6 As Pretas perdem uma peça após 43 ... Nxf3 44 Nxd6+.
+
+===FIM===
